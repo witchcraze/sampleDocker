@@ -13,7 +13,12 @@ jobs:
 
     strategy:
       matrix:
-        target: ["ubuntu2204_full"]
+        target: [
+            # "ubuntu1604_full",
+            "ubuntu1804_full",
+            "ubuntu2004_full",
+            "ubuntu2204_full",
+          ]
 
     steps:
       - name: Checkout repository
@@ -35,6 +40,5 @@ jobs:
         with:
           context: ./${{ matrix.target }}
           push: true
-          tags: ghcr.io/witchcraze/samples:${{ matrix.target }}
-
+          tags: ghcr.io/witchcraze/${{ matrix.target }}:latest
 # 参考 : https://qiita.com/tomoyk/items/ab4d55cd1735bb2b579a
