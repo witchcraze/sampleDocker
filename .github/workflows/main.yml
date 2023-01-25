@@ -40,4 +40,6 @@ jobs:
           context: ./${{ matrix.target }}
           push: true
           tags: ghcr.io/witchcraze/${{ matrix.target }}:latest
+          ache-from: type=gha scope=${{ matrix.target }}
+          cache-to: type=gha,mode=max scope=${{ matrix.target }}
 # 参考 : https://qiita.com/tomoyk/items/ab4d55cd1735bb2b579a
