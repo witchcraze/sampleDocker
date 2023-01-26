@@ -13,6 +13,6 @@ create sample docker images with various instal method
 
 ### install method
 
-- `OS` : install with OS packages
-- `UpstreamPKG` : install with upstream packages
-- `UpstreamBIN` : install with upstream binary
+- `os` : install with OS packages
+- `upstream-pkg` : install with upstream packages
+- `upstream-bin` : install with upstream binary
