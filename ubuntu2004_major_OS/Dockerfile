@@ -1,6 +1,7 @@
 FROM ubuntu:20.04
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
   apache2 \
+  binutils \
   golang \
   haproxy \
   memcached \
@@ -17,4 +18,5 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-ins
   samba \
   tomcat9 \
   varnish \
+  && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
