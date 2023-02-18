@@ -22,7 +22,6 @@ jobs:
             "debian11_major_os",
             "rocky8_major_os",
             "rocky9_major_os",
-            "rocky9_nodejs16_appstream",
             "rocky9_nodejs18_appstream",
             "rocky9_php81_appstream",
             "rocky9_ruby31_appstream",
