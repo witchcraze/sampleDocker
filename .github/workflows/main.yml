@@ -22,7 +22,7 @@ jobs:
             "debian10_nginx1.14.2-2deb10u3_os",
             "debian10_nginx1.14.2-2deb10u5_os",
             "debian10_nginx1.20.0-1_upstream",
-            "debian10_nginx1.21.0-1_upstream",
+            "debian10_nginx1.20.1-1_upstream",
             "debian11_major_os",
             "debian11_nginx1.18.0-6.1_deb11u2_os",
             "debian11_nginx1.18.0-6.1_deb11u3_os",
