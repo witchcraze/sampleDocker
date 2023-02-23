@@ -9,7 +9,4 @@ RUN echo "deb [signed-by=/usr/share/keyrings/nginx-archive-keyring.gpg] \
     http://nginx.org/packages/debian `lsb_release -cs` nginx" \
         | tee /etc/apt/sources.list.d/nginx.list
 
-RUN echo -e "Package: *\nPin: origin nginx.org\nPin: release o=nginx\nPin-Priority: 900\n" \
-        | tee /etc/apt/preferences.d/99nginx
-
 RUN apt update && apt install -y nginx=1.20.1-1~buster
